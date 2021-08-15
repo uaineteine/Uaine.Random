@@ -7,7 +7,7 @@ namespace Uaine.Random
     {
         protected bool usingrandomseed;
         public bool UsingRandomSeed => usingrandomseed;
-        public URandom() : base(Environment.TickCount)
+        public URandom() : base(randomseed())
         {
             usingrandomseed = true;
         }
@@ -18,6 +18,12 @@ namespace Uaine.Random
         public URandom(int seed) : base(seed)
         {
             usingrandomseed = false;
+        }
+
+        private static int randomseed()
+        {
+            System.Random rnd = new System.Random();
+            return rnd.Next();
         }
 
         public long RandomLong()
