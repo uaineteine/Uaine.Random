@@ -19,5 +19,25 @@ namespace Uaine.Random
         {
             usingrandomseed = false;
         }
+
+        public long RandomLong()
+        {
+            byte[] buffer = new byte[8];
+            NextBytes(buffer);
+            return BitConverter.ToInt64(buffer, 0);
+        }
+        public ulong RandomULong()
+        {
+            byte[] buffer = new byte[8];
+            NextBytes(buffer);
+            return BitConverter.ToUInt64(buffer, 0);
+        }
+        public long RandomLongPosOnly()
+        {
+            byte[] buffer = new byte[8];
+            NextBytes(buffer);
+            long value = BitConverter.ToInt64(buffer, 0);
+            return Math.Abs(value);
+        }
     }
 }
