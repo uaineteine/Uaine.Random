@@ -25,7 +25,6 @@ namespace Uaine.Random
             System.Random rnd = new System.Random();
             return rnd.Next();
         }
-
         public long RandomLong()
         {
             byte[] buffer = new byte[8];
@@ -44,6 +43,22 @@ namespace Uaine.Random
             NextBytes(buffer);
             long value = BitConverter.ToInt64(buffer, 0);
             return Math.Abs(value);
+        }
+        public short RandomShort()
+        {
+            byte[] buffer = new byte[2];
+            NextBytes(buffer);
+            return BitConverter.ToInt16(buffer, 0);
+        }
+        public ushort RandomUShort()
+        {
+            byte[] buffer = new byte[2];
+            NextBytes(buffer);
+            return BitConverter.ToUInt16(buffer, 0);
+        }
+        public bool RandomBool()
+        {
+            return (Next() % 2 == 0);
         }
     }
 }
