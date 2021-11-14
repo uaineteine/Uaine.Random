@@ -60,5 +60,56 @@ namespace Uaine.Random
         {
             return (Next() % 2 == 0);
         }
+        public bool RandomBool(float chanceToBeTrue)
+        {
+            return (NextDouble() >= chanceToBeTrue);
+        }
+
+        //SEQUENCES 
+        public int[] randomSequence(int length, int maxInt)
+        {
+            int[] values = new int[length];
+            for (int i = 0; i < length; i++)
+            {
+                values[i] = Next(maxInt);
+            }
+            return values;
+        }
+        public int[] randomSequence(int length)
+        {
+            int[] values = new int[length];
+            for (int i = 0; i < length; i++)
+            {
+                values[i] = Next();
+            }
+            return values;
+        }
+        public float[] randomFloatSequence(int length)
+        {
+            float[] values = new float[length];
+            for (int i = 0; i < length; i++)
+            {
+                values[i] = (float)NextDouble();
+            }
+            return values;
+        }
+        public bool[] randomBoolSequence(int length)
+        {
+            bool[] values = new bool[length];
+            for (int i = 0; i < length; i++)
+            {
+                values[i] = RandomBool();
+            }
+            return values;
+        }
+        public bool[] randomBoolSequence(int length, float chanceToBeTrue)
+        {
+            bool[] values = new bool[length];
+            for (int i = 0; i < length; i++)
+            {
+                values[i] = RandomBool(chanceToBeTrue);
+            }
+            return values;
+        }
     }
 }

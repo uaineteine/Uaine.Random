@@ -10,6 +10,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Copyright>Daniel Stamer-Squair 2021</Copyright>
     <Description>A System.Random extension class with additional functions</Description>
+    <Version>1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

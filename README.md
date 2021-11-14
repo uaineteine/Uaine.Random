@@ -6,7 +6,7 @@ A System.Random extension class with additional functions
 
 Add source project to solution with reference to get started or install via [NuGet](https://www.nuget.org/packages/Uaine.Random/)
 
-## Version 1.0
+## Version 1.0.1
 
 See the [changelog](changelog.txt) for details.
 
