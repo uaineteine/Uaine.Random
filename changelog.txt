@@ -1,3 +1,6 @@
+--1.1.1--
+Uaine.Objects dependency updated to 1.7
+
 --1.1--
 Random sequence functions coded in to return a series of numbers of various types
 Random bool function now has a chance modifier
