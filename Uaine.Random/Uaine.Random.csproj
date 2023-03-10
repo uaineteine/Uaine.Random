@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <Authors>Daniel Stamer-Squair</Authors>
     <Company>Uaine Teine</Company>
     <RepositoryType>rng</RepositoryType>
@@ -10,7 +10,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Copyright>Daniel Stamer-Squair 2021</Copyright>
     <Description>A System.Random extension class with additional functions</Description>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <PackageProjectUrl>https://github.com/uaineteine/Uaine.Random</PackageProjectUrl>
     <RepositoryUrl>https://github.com/uaineteine/Uaine.Random</RepositoryUrl>
   </PropertyGroup>
