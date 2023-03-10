@@ -1,5 +1,5 @@
 --1.1.3--
-Uaine.Objects dependency updated to 1.11 from 1.7
+Uaine.Objects dependency updated to 1.11 from 1.10
 min Net Standard now 1.3 from 1
 added a general MakeBuffer method that uses the base NextBytes for a set buffer length
 
