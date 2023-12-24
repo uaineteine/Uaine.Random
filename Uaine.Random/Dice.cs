@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Uaine.Random
 {
@@ -77,6 +78,36 @@ namespace Uaine.Random
                 sum += Roll();
             }
             return sum;
+        }
+    }
+
+    public class Dice
+    {
+        private readonly Die[] dice;
+
+        public Dice(params Die[] dice)
+        {
+            if (dice == null || dice.Length == 0)
+            {
+                throw new ArgumentException("At least one die should be provided.");
+            }
+
+            this.dice = dice;
+        }
+
+        public int Roll()
+        {
+            return dice.Sum(d => d.Roll());
+        }
+
+        public int Max(int numberOfRolls)
+        {
+            return dice.Sum(d => d.Max(numberOfRolls));
+        }
+
+        public int Sum(int numberOfRolls)
+        {
+            return dice.Sum(d => d.Sum(numberOfRolls));
         }
     }
 }
