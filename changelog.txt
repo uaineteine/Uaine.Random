@@ -1,3 +1,9 @@
+--2.0--
+Standalone package, no longer requires any dependencies
+seeded random class from uaine.objects deployed into package
+new die class
+lowered .net standard to 1.0 for more compatability
+
 --1.1.3--
 Uaine.Objects dependency updated to 1.11 from 1.10
 min Net Standard now 1.3 from 1
